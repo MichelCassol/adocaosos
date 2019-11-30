@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('listagemAnimais');
 });
+Route::get('/animal', function () {
+    return view('cadastroAnimal');
+});

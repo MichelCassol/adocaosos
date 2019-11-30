@@ -105,7 +105,7 @@
                     <li class="float-left">
                         <a href="index.html" class="logo">
                             <span class="logo-lg">
-                                <img src="{{ asset('images/adocaosos_logo.png') }}" alt="" height="80"> 
+                                <img src="{{ asset('images/adocaosos_logo.png') }}" alt="" height="80">
                             </span>
                             <span class="logo-sm">
                                 <img src="{{ asset('images/logo_sm.png') }}" alt="" height="30">
@@ -235,7 +235,7 @@
                 <div class="clearfix"></div>
             </div><!-- Sidebar -left -->
         </div><!-- Left Sidebar End -->
-        
+
         @yield('conteudo')
 
         <!-- Footer -->
@@ -331,7 +331,7 @@
     <script src="{{ asset('libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('libs/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
     <script src="{{ asset('libs/metismenu/metisMenu.min.js') }}"></script>
-    
+
     <!-- App js -->
     <script src="{{ asset('js/jquery.core.js') }}"></script>
     <script src="{{ asset('js/jquery.app.js') }}"></script>

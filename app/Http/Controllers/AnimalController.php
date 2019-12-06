@@ -58,8 +58,8 @@ class AnimalController extends Controller
         $animal->descricao = $request->input('inputDesc');
         $animal->vacinacao = $request->input('radioVac');
         $animal->castrado = $request->input('radioCastro');
-        //$animal->id_dono = $request->input('dono');
-        $animal->id_dono = 1;
+        $animal->id_dono = $request->input('dono');
+        //$animal->id_dono = 1;
 
         if(isset($animal)){
             $animal->save();
@@ -113,8 +113,8 @@ class AnimalController extends Controller
         $animal->descricao = $request->input('inputDesc');
         $animal->vacinacao = $request->input('radioVac');
         $animal->castrado = $request->input('radioCastro');
-        //$animal->id_dono = $request->input('comboDono');
-        $animal->id_dono = 1;
+        $animal->id_dono = $request->input('dono');
+        //$animal->id_dono = 1;
 
     }
 

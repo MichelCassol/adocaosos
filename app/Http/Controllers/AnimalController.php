@@ -33,10 +33,7 @@ class AnimalController extends Controller
     public function create()
     {
         $user = Auth::user();
-        //$user = User::where('id', $id)->get();
         return view('cadastroAnimal',['users' => $user]);
-    //     $donos = Dono::orderBy('nome', 'ASC')->get();
-    //     return view('cadastroAnimal', ['donos' => $donos]);
     }
 
     /**
@@ -116,7 +113,7 @@ class AnimalController extends Controller
         $animal->castrado = $request->input('radioCastro');
         //$animal->id_dono = $request->input('comboDono');
         $animal->id_dono = 1;
-        
+
     }
 
     /**

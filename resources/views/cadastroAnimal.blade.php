@@ -121,10 +121,7 @@
                     </div>
                         <div class="form-row">
                             <div class="form-group col-md-12"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
-                                <select id="comboDono" class="form-control">
-                                    <option disabled="disabled" value="" selected>Selecione um Dono</option>
-
-                                </select>
+                                <input class="form-control" type="text" id="dono" name="dono" value="{{ $users->name }}" disabled="disabled">
                              </div>
                         </div>
 

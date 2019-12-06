@@ -50,6 +50,29 @@
                         </select>
                     </div>
 
+                        <div class="form-group col-md-2">
+                            <label class="col-form-label">Sexo:</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radioSexo1" name="radioSexo" class="custom-control-input" value="F">
+                                    <label class="custom-control-label" for="radioSexo1">Fêmea</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radioSexo2" name="radioSexo" class="custom-control-input" value="M">
+                                    <label class="custom-control-label" for="radioSexo2">Macho</label>
+                                </div>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="inputIdade" class="col-form-label">Idade</label>
+                            <input type="number" class="form-control" id="inputIdade" name="inputIdade" placeholder="Idade do Animal">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputRaca" class="col-form-label">Raça</label>´
+                            <input type="text" class="form-control" id="inputRaca" name="inputRaca" placeholder="Raça do Animal">
+                        </div>
+
+
                     <div class="form-group col-md-2">
                         <label class="col-form-label">Sexo:</label>
                             <div class="custom-control custom-radio">

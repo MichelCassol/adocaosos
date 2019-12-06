@@ -50,7 +50,7 @@
 
                     <div class="form-row">
                         <div class="form-group col-md-2"><label
-                            class="col-form-label">Sexo</label>
+                            class="col-form-label">Sexo:</label>
                             <div class="custom-control custom-radio"><input type="radio"
                                     id="radioSexo1" name="radioSexo" class="custom-control-input">
                                 <label class="custom-control-label" for="radioSexo1">Fêmea</label></div>
@@ -68,7 +68,7 @@
 
 
 
-                        <label class="col-form-label">Sexo</label>
+                        <label class="col-form-label">Porte:</label>
                              <div class="custom-control custom-radio"><input type="radio"
                             id="radioPorte1" name="radioPorte" class="custom-control-input">
                             <label class="custom-control-label" for="radioPorte1">Pequeno</label></div>
@@ -89,7 +89,17 @@
                                         id="radioCastro2" name="radioCastro" class="custom-control-input">
                                     <label class="custom-control-label" for="radioCastro2">Não</label></div>
                             </div>
-                            <div class="form-group col-md-8"><label class="col-md col-form-label" name="inputDesc">Descrição</label>
+                            <div class="form-group col-md-2"><label
+                                class="col-form-label">Vacinado:</label>
+                                <div class="custom-control custom-radio"><input type="radio"
+                                        id="radicoVac1" name="radicoVac" class="custom-control-input">
+                                    <label class="custom-control-label" for="radicoVac1">Sim</label></div>
+                                <div class="custom-control custom-radio"><input type="radio"
+                                        id="radicoVac2" name="radicoVac" class="custom-control-input">
+                                    <label class="custom-control-label" for="radicoVac2">Não</label></div>
+                            </div>
+
+                            <div class="form-group col-md-6"><label class="col-md col-form-label" name="inputDesc">Descrição</label>
                                 <div class="col-md"><textarea class="form-control"  rows="3"></textarea></div>
                         </div>
 

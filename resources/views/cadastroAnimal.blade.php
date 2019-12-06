@@ -46,11 +46,8 @@
                                 <option>Hamster</option>
                                 <option>Porco</option>
                                 <option>Porquinho da India</option>
-                            </select></div>
-
                             </select>
                         </div>
-
 
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Sexo:</label>
@@ -126,22 +123,9 @@
                             <div class="form-group col-md-12"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
                                 <select id="comboDono" class="form-control">
                                     <option disabled="disabled" value="" selected>Selecione um Dono</option>
-                                    @foreach ($donos as $dono)
-                                    <option value="{{ $dono->id }}" @isset($animal) @if($animal->dono_id == $dono->id) selected @endif @endisset>{{ $dono->nome }}</option>    
-                                     @endforeach             
+                                        
                                 </select>
-
-                            <!--<div class="form-group col-md-6"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
-
-                                <input class="form-control" type="text" id="dono" name="dono" value="{{ $users->name }}" disabled="disabled">
-
-                                {{-- <select id="inputState" class="form-control">
-                                    <option disabled="disabled" value="" selected>Selecione um Dono</option>
-                                    @foreach ($users as $user)
-                                        <option value="{{ $cargo->id }}" @isset($user) @if selected>Selecione um Dono</option>
-                                    @endforeach
-                                </select> --}} -->    
-                             </div>
+                             </div>                    
                         </div>
 
                     <div class="form-row">

@@ -1,5 +1,5 @@
 @extends('layout.app')
 
 @section('conteudo')
-    Listagem de animais
+    Listagem de Donos
 @endsection

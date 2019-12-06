@@ -28,7 +28,7 @@
         <!-- Navigation Bar-->
         <header id="topnav">
             <nav class="navbar-custom">
-                
+
                 <ul class="list-unstyled menu-left mb-0">
                     <li class="float-left">
                         <a href="index.html" class="logo">
@@ -58,15 +58,15 @@
                 <div id="sidebar-menu">
                     <ul class="metismenu" id="side-menu">
                         <li class="menu-title">Menu de Opções</li>
-                        <li><a href="lista"><i class="mdi mdi-view-dashboard"></i> <span>Lista de Animais</span></a></li>
-                        <li><a href="lista"><i class="mdi mdi-view-dashboard"></i> <span>Lista de Donos</span></a></li>
+                        <li><a href="/animal"><i class="mdi mdi-view-dashboard"></i> <span>Lista de Animais</span></a></li>
+                        <li><a href="/dono"><i class="mdi mdi-view-dashboard"></i> <span>Lista de Donos</span></a></li>
 
 
                         <li><a href="javascript: void(0);"><i class="mdi mdi-file-document-box"></i><span
                                     class="badge badge-danger float-right"></span> <span>Cadastro</span></a>
                             <ul class="nav-second-level" aria-expanded="false">
-                                <li><a href="animal">Cadastro de Animais</a></li>
-                                <li><a href="dono">Cadastro de Dono</a></li>
+                                <li><a href="/animal/create">Cadastro de Animais</a></li>
+                                <li><a href="/dono/create">Cadastro de Dono</a></li>
                             </ul>
                         </li>
 
@@ -108,7 +108,7 @@
                 </div>
             </div>
         </footer><!-- End Footer -->
-        
+
 
     <!-- jQuery  -->
     <script src="{{ asset('libs/jquery/jquery.min.js') }}"></script>

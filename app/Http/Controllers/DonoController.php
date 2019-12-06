@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Dono;
 
 class DonoController extends Controller
 {
@@ -13,7 +14,8 @@ class DonoController extends Controller
      */
     public function index()
     {
-        return view('listagemDono');
+        $donos = Dono::orderBy('nome', 'ASC')->get();
+        return view('listagemDono', ['donos' => $donos]);
     }
 
     /**
@@ -22,7 +24,10 @@ class DonoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    {   
+
+
+
         return view('cadastroDono');
     }
 

@@ -38,14 +38,14 @@ class AnimalController extends Controller
         $animal = new Animal();
 
         $animal->nome = $request->input('inputNome');
-        $animal->sexo = $request->input('');
-        $animal->especie = $request->input();
-        $animal->raca = $request->input();
-        $animal->idade = $request->input();
-        $animal->porte = $request->input();
-        $animal->descricao = $request->input();
-        $animal->vacinacao = $request->input();
-        $animal->castrado = $request->input();
+        $animal->sexo = $request->input('radioSexo');
+        $animal->especie = $request->input('comboEspecie');
+        $animal->raca = $request->input('inputRaca');
+        $animal->idade = $request->input('inputIdade');
+        $animal->porte = $request->input('radioPorte');
+        $animal->descricao = $request->input('inputDesc');
+        $animal->vacinacao = $request->input('');
+        $animal->castrado = $request->input('radioCastro');
         $animal->id_dono = $request->input();
     }
 

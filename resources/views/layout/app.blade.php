@@ -31,7 +31,7 @@
 
                 <ul class="list-unstyled menu-left mb-0">
                     <li class="float-left">
-                        <a href="index.html" class="logo">
+                        <a href="" class="logo">
                             <span class="logo-lg">
                                 <img src="{{ asset('images/petspng.png') }}" alt="" height="80">
                                 <img src="{{ asset('images/adocaosos_logo.png') }}" alt="" height="80">

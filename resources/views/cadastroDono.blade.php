@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('conteudo')
-</li> -->
+</li>
 </ul>
 </div><!-- Sidebar -->
 <div class="clearfix"></div>

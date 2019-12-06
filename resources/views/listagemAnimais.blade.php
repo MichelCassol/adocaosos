@@ -35,6 +35,7 @@
     <thead style="color: slateblue">
       <tr>
         <th scope="col">Dono</th>
+        <th scope="col">Nome</th>
         <th scope="col">Especie</th>
         <th scope="col">Porte</th>
         <th scope="col">Raça</th>
@@ -46,6 +47,7 @@
     <tbody>
       <tr>
         <th scope="row">Gabriel</th>
+        <td>Fred</td>
         <td>Cachorro</td>
         <td>Grande</td>
         <td>Labrador</td>
@@ -55,6 +57,7 @@
       </tr>
       <tr>
         <th scope="row">Michel</th>
+        <td>Carlitos</td>
         <td>Gato</td>
         <td>Pequeno</td>
         <td>Persa</td>
@@ -64,6 +67,7 @@
       </tr>
       <tr>
         <th scope="row">Eruz    </th>
+        <td>PeixoPorc</td>
         <td>Porquinho da India</td>
         <td>Pequeno</td>
         <td>Abissímo</td>

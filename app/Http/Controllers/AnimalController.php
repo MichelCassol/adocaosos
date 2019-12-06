@@ -44,9 +44,17 @@ class AnimalController extends Controller
         $animal->idade = $request->input('inputIdade');
         $animal->porte = $request->input('radioPorte');
         $animal->descricao = $request->input('inputDesc');
-        $animal->vacinacao = $request->input('');
+        $animal->vacinacao = $request->input('radicoVac');
         $animal->castrado = $request->input('radioCastro');
-        $animal->id_dono = $request->input();
+        $animal->id_dono = 1; //$request->input();
+
+        if(isset($animal)){
+            $animal->save();
+            Alert::success('Registro salvo','O registro foi salvo com sucesso');
+            return redirect('/animal');
+        }else{
+            Alert::error('Erro','Ocorreu um erro ao salvar');
+        }
     }
 
     /**

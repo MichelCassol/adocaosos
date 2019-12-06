@@ -28,7 +28,8 @@
         <div class="col-md-12">
             <div class="card-box">
                 <h4 class="m-t-0 header-title">Cadastro</h4>
-                <form>
+                <form method="POST" action="/animal">
+                    @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6"><label for="inputEmail4"
                                 class="col-form-label">Nome</label> <input type="nome"

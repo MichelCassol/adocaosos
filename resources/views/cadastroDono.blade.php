@@ -55,7 +55,7 @@
                             <div class="form-group col-md-6"><label name="comboEstado" for="comboEstado"
                                 class="col-form-label">Estado</label> <select id="comboEstado"
                                 class="form-control">
-                                <option>Selecione um estado</option>
+                                <option disabled="disabled" value="" selected>Selecione um estado</option>
                                 <option>Acre</option>
                                 <option>Alagoas</option>
                                 <option>Amapa</option>

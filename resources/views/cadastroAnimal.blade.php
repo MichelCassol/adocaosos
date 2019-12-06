@@ -37,7 +37,7 @@
                         <div class="form-group col-md-6">
                             <label for="comboEspecie" class="col-form-label" name="comboEspecie">Espécie</label>
                             <select id="inputEspecie" class="form-control">
-                                <option>Escolha a Espécie</option>
+                                <option disabled="disabled" value="" selected>Escolha a Espécie</option>
                                 <option>Ave</option>
                                 <option>Cachorro</option>
                                 <option>Cavalo</option>
@@ -46,11 +46,8 @@
                                 <option>Hamster</option>
                                 <option>Porco</option>
                                 <option>Porquinho da India</option>
-                            </select></div>
-
                             </select>
                         </div>
-
 
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Sexo:</label>
@@ -93,11 +90,11 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Castrado:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioCastro1" name="radioCastro" class="custom-control-input" value="1">
+                                <input type="radio" id="radioCastro1" name="radioCastro" class="custom-control-input" value=true>
                                 <label class="custom-control-label" for="radioCastro1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioCastro2" name="radioCastro" class="custom-control-input"value="0">
+                                <input type="radio" id="radioCastro2" name="radioCastro" class="custom-control-input" value=false>
                                 <label class="custom-control-label" for="radioCastro2">Não</label>
                             </div>
                         </div>
@@ -105,11 +102,11 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Vacinado:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radicoVac1" name="radicoVac" class="custom-control-input" value="1">
+                                <input type="radio" id="radioVac1" name="radicoVac" class="custom-control-input" value=true>
                                 <label class="custom-control-label" for="radicoVac1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radicoVac2" name="radicoVac" class="custom-control-input" value="0">
+                                <input type="radio" id="radioVac2" name="radicoVac" class="custom-control-input" value=false>
                                 <label class="custom-control-label" for="radicoVac2" >Não</label>
                             </div>
                         </div>
@@ -123,13 +120,11 @@
 
                     </div>
                         <div class="form-row">
-                            <div class="form-group col-md-6"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
-
-                                <input class="form-control" type="text" id="dono" name="dono" value="{{ $users->name }}" disabled="disabled">
-
-                                {{-- <select id="inputState" class="form-control">
+                            <div class="form-group col-md-12"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
+                                <select id="comboDono" class="form-control">
                                     <option disabled="disabled" value="" selected>Selecione um Dono</option>
-                                </select> --}}
+
+                                </select>
                              </div>
                         </div>
 

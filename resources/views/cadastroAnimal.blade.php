@@ -14,11 +14,9 @@
     <!-- Page title box -->
     <div class="page-title-box">
         <ol class="breadcrumb float-right">
-            <li class="breadcrumb-item"><a href="javascript:void(0);">Greeva</a></li>
-            <li class="breadcrumb-item"><a href="javascript:void(0);">Forms</a></li>
-            <li class="breadcrumb-item active">Form Elements</li>
+            <li class="breadcrumb-item active">Cadastro de Animal</li>
         </ol>
-        <h4 class="page-title">Cadastro de Animais</h4>
+        <h4 class="page-title">Cadastro</h4>
     </div><!-- End page title box -->
     <div class="row">
         <div class="col-12">

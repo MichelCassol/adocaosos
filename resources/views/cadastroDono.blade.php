@@ -14,11 +14,9 @@
 <!-- Page title box -->
 <div class="page-title-box">
     <ol class="breadcrumb float-right">
-        <li class="breadcrumb-item"><a href="javascript:void(0);">Greeva</a></li>
-        <li class="breadcrumb-item"><a href="javascript:void(0);">Forms</a></li>
-        <li class="breadcrumb-item active">Form Elements</li>
+        <li class="breadcrumb-item active">Cadastro de Dono</li>
     </ol>
-    <h4 class="page-title">Cadastro </h4>
+    <h4 class="page-title">Cadastro</h4>
 </div><!-- End page title box -->
 <div class="row">
     <div class="col-12">
@@ -32,11 +30,11 @@
                 <div class="form-row">
                     <div class="form-group col-md-6"><label for="inputNome"
                             class="col-form-label">Nome</label> <input type="text"
-                            class="form-control" name="inputNome" id="inputNome" placeholder="Nome do Animal"></div>
+                            class="form-control" name="inputNome" id="inputNome" placeholder="Nome do Dono"></div>
 
                             <div class="form-group col-md-6"><label for="cpf"
-                                class="col-form-label">Cpf</label> <input type="number"
-                                class="form-control" name="inputCPF" id="inputCPF" ></div>
+                                class="col-form-label">CPF</label> <input type="number"
+                                class="form-control" name="inputCPF" id="inputCPF" placeholder="Apenas números"></div>
                                 <div class="form-group col-md-2"><label
                                     class="col-form-label">Sexo</label>
                                     <div class="custom-control custom-radio"><input type="radio"
@@ -103,7 +101,7 @@
                                 class="form-control" name="inputEmail" id="inputEmail" placeholder="email@email.com"></div>
                                 <div class="form-group col-md-6"><label for="inputLogradouro"
                                     class="col-form-label">Telefone</label> <input type="text"
-                                    class="form-control" name="inputTelefone" id="inputFone" placeholder="(xx)x-xxxx-xxxx)"></div>
+                                    class="form-control" name="inputTelefone" id="inputFone" placeholder="(xx)x-xxxx-xxxx"></div>
 
 
                 </div>

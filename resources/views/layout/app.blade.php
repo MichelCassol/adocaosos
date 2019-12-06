@@ -28,20 +28,16 @@
         <!-- Navigation Bar-->
         <header id="topnav">
             <nav class="navbar-custom">
-                <ul class="list-unstyled topbar-right-menu float-right mb-0">
-                    
-                    
-                    <li class="dropdown notification-list"><a href="javascript:void(0);"
-                            class="nav-link right-bar-toggle"><i class="dripicons-gear noti-icon"></i></a></li>
-                </ul>
+                
                 <ul class="list-unstyled menu-left mb-0">
                     <li class="float-left">
                         <a href="index.html" class="logo">
                             <span class="logo-lg">
+                                <img src="{{ asset('images/petspng.png') }}" alt="" height="80">
                                 <img src="{{ asset('images/adocaosos_logo.png') }}" alt="" height="80">
                             </span>
                             <span class="logo-sm">
-                                <img src="{{ asset('images/logo_sm.png') }}" alt="" height="30">
+                                <img src="{{ asset('images/petspng.png') }}" alt="" height="30">
                             </span>
                         </a>
                     </li>
@@ -49,7 +45,7 @@
                             <div class="lines"><span></span> <span></span> <span></span></div>
                         </a></li>
                     <li class="app-search">
-                        <form><input type="text" placeholder="Search..." class="form-control"> <button type="submit"
+                        <form><input type="text" placeholder="Pesquisa" class="form-control"> <button type="submit"
                                 class="sr-only"></button></form>
                     </li>
                 </ul>
@@ -61,8 +57,9 @@
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <ul class="metismenu" id="side-menu">
-                        <li class="menu-title">Navigation</li>
+                        <li class="menu-title">Menu de Opções</li>
                         <li><a href="lista"><i class="mdi mdi-view-dashboard"></i> <span>Lista de Animais</span></a></li>
+                        <li><a href="lista"><i class="mdi mdi-view-dashboard"></i> <span>Lista de Donos</span></a></li>
 
 
                         <li><a href="javascript: void(0);"><i class="mdi mdi-file-document-box"></i><span
@@ -72,7 +69,16 @@
                                 <li><a href="dono">Cadastro de Dono</a></li>
                             </ul>
                         </li>
-                        <!-- <li>
+
+                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"><i class="mdi mdi-view-dashboard"></i>
+                            <span>Sair</span></a></li>                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                        <!--<li>
                                     <a href="javascript: void(0);"><i class="mdi mdi-multiplication"></i> <span> Multi Level </span> <span class="menu-arrow"></span></a>
                                     <ul class="nav-second-level nav" aria-expanded="false">
                                         <li><a href="javascript: void(0);">Level 1.1</a></li>
@@ -83,7 +89,9 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li> -->
+                                </li>
+                            -->
+
                     </ul>
                 </div><!-- Sidebar -->
                 <div class="clearfix"></div>

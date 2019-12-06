@@ -18,7 +18,7 @@
         <li class="breadcrumb-item"><a href="javascript:void(0);">Forms</a></li>
         <li class="breadcrumb-item active">Form Elements</li>
     </ol>
-    <h4 class="page-title">Cadastro de Animais</h4>
+    <h4 class="page-title">Cadastro </h4>
 </div><!-- End page title box -->
 <div class="row">
     <div class="col-12">
@@ -45,7 +45,15 @@
                                     <div class="custom-control custom-radio"><input type="radio"
                                             id="radioSexo2" name="radioSexo" class="custom-control-input">
                                         <label class="custom-control-label" for="radioSexo2">Masculino</label></div>
+
+
                             </div>
+
+                            <div class="form-group col-md-4"><label for="cpf"
+                                class="col-form-label">Data de Nascimento</label> <input type="date"
+                                class="form-control" id="inputNascimento" ></div>
+
+
                             <div class="form-group col-md-6"><label for="inputState"
                                 class="col-form-label">Espécie</label> <select id="inputState"
                                 class="form-control">

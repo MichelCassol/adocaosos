@@ -15,5 +15,8 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::resource('/animal', 'AnimalController');
-Route::resource('/dono', 'donoController');
+Route::resource('/dono', 'DonoController');
 
+Route::get('/lista', function(){
+    return view('listagemAnimais');
+});

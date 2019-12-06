@@ -15,7 +15,7 @@ class CreateTableAnimal extends Migration
     public function up()
     {
         Schema::create('tb_animal', function (Blueprint $table) {
-            $table->bigIncrements('id');   
+            $table->bigIncrements('id');
             $table->string('nome');
             $table->char('sexo');
             $table->string('especie');
@@ -25,8 +25,9 @@ class CreateTableAnimal extends Migration
             $table->string('descricao')->nullable($value = true);
             $table->boolean('vacinacao');
             $table->boolean('castrado');
+            $table->integer('id_dono');
             //$table->text('foto');
-            
+
         });
     }
 

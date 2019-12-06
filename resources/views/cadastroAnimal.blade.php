@@ -26,12 +26,13 @@
         <div class="col-md-12">
             <div class="card-box">
                 <h4 class="m-t-0 header-title">Cadastro</h4>
-                <form method="POST" action="/animal">
+                <form method="POST" @if(isset($animal)) action="/animal/{{ $animal->id }} @else action="/animal" @endif>
                     @csrf
+                    <input type="hidden" name=_method" value="{{ isset($animal) ? 'PATCH' : 'POST' }}">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputNome" class="col-form-label">Nome</label>
-                            <input type="nome" class="form-control" id="inputNome" name="inputNome" placeholder="Nome do Animal">
+                            <input value="{{ $animal->nome ?? '' }}" type="nome" class="form-control" id="inputNome" name="inputNome" placeholder="Nome do Animal">
                         </div>
 
                         <div class="form-group col-md-6">
@@ -63,12 +64,12 @@
 
                         <div class="form-group col-md-4">
                             <label for="inputIdade" class="col-form-label">Idade</label>
-                            <input type="number" class="form-control" id="inputIdade" name="inputIdade" placeholder="Idade do Animal">
+                            <input value="{{ $animal->idade ?? '' }}" type="number" class="form-control" id="inputIdade" name="inputIdade" placeholder="Idade do Animal">
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="inputRaca" class="col-form-label">Raça</label>´
-                            <input type="text" class="form-control" id="inputRaca" name="inputRaca" placeholder="Raça do Animal">
+                            <input value="{{ $animal->raca ?? ''}}"type="text" class="form-control" id="inputRaca" name="inputRaca" placeholder="Raça do Animal">
                         </div>
 
                         <div class="form-group col-md-2">
@@ -114,19 +115,19 @@
                         <div class="form-group col-md-6">
                             <label class="col-form-label">Descrição</label>
                             <div>
-                                <textarea class="form-control" name="inputDesc" id="inputDesc" rows="3"></textarea>
+                                <textarea value="{{ $animal->descricao ?? '' }}" class="form-control" name="inputDesc" id="inputDesc" rows="3" placeholder="Descrição"></textarea>
                             </div>
                         </div>
 
                     </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="comboDono" class="col-form-label">Dono</label>
-                                <select id="inputDono" name="comboDono" class="form-control">
+                                <label for="dono" class="col-form-label">Dono</label>
+                                <select id="dono" name="dono" class="form-control">
                                     <option disabled="disabled" value="" selected>Selecione um Dono</option>
                                    
                                    @foreach ($donos as $dono)
-                                        <option value="{{ $dono->id }}" @isset($animal) @if($animal->dono_id == $dono->id) selected @endif @endisset>{{ $dono->nome }}</option>    
+                                        <option value="{{ $dono->id}}" @isset($animal) @if($animal->dono_id == $dono->id) selected @endif @endisset>{{ $dono->nome }}</option>    
                                     @endforeach
                                     
                                 </select>

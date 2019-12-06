@@ -60,7 +60,7 @@ class AnimalController extends Controller
         $animal->descricao = $request->input('inputDesc');
         $animal->vacinacao = $request->input('radioVac');
         $animal->castrado = $request->input('radioCastro');
-        $animal->id_dono = $request->input('comboDono');
+        $animal->id_dono = $request->input('dono');
         //$animal->id_dono = 1;
 
         if(isset($animal)){
@@ -117,14 +117,6 @@ class AnimalController extends Controller
         $animal->castrado = $request->input('radioCastro');
         $animal->id_dono = $request->input('dono');
         //$animal->id_dono = 1;
-
-        if(isset($animal)){
-            $animal->save();
-            Alert::success('Registro salvo','O registro foi salvo com sucesso');
-            return redirect('/animal');
-        }else{
-            Alert::error('Erro','Ocorreu um erro ao salvar');
-        }
     }
 
     /**

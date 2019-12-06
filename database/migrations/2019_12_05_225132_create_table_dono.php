@@ -15,6 +15,7 @@ class CreateTableDono extends Migration
     {    
         Schema::create('tb_dono', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nome');
             $table->string('cpf');
             $table->char('sexo');
             $table->string('dataNascimento');

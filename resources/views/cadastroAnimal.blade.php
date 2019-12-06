@@ -35,17 +35,17 @@
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label for="comboEspecie" class="col-form-label" name="comboEspecie">Espécie</label>
-                            <select id="inputEspecie" class="form-control">
+                            <label for="comboEspecie" class="col-form-label">Espécie</label>
+                            <select id="inputEspecie" name="comboEspecie" class="form-control">
                                 <option disabled="disabled" value="" selected>Escolha a Espécie</option>
-                                <option>Ave</option>
-                                <option>Cachorro</option>
-                                <option>Cavalo</option>
-                                <option>Coelho</option>
-                                <option>Gato</option>
-                                <option>Hamster</option>
-                                <option>Porco</option>
-                                <option>Porquinho da India</option>
+                                <option value="Ave">Ave</option>
+                                <option value="Cachorro">Cachorro</option>
+                                <option value="Cavalo">Cavalo</option>
+                                <option value="Coelho">Coelho</option>
+                                <option value="Gato">Gato</option>
+                                <option value="Hamster">Hamster</option>
+                                <option value="Porco">Porco</option>
+                                <option value="Porquinho da India">Porquinho da India</option>
                             </select>
                         </div>
 
@@ -112,9 +112,9 @@
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label for="inputDesc" class="col-form-label">Descrição</label>
+                            <label class="col-form-label">Descrição</label>
                             <div>
-                                <textarea id= "inputDesc" name="inputDesc" class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" name="inputDesc" id="inputDesc" rows="3"></textarea>
                             </div>
                         </div>
 

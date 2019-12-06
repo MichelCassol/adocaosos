@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Animal;
 use App\Dono;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class AnimalController extends Controller
@@ -30,8 +32,11 @@ class AnimalController extends Controller
      */
     public function create()
     {
-        $donos = Dono::orderBy('nome', 'ASC')->get();
-        return view('cadastroAnimal', ['donos' => $donos]);
+        $user = Auth::user();
+        //$user = User::where('id', $id)->get();
+        return view('cadastroAnimal',['users' => $user]);
+    //     $donos = Dono::orderBy('nome', 'ASC')->get();
+    //     return view('cadastroAnimal', ['donos' => $donos]);
     }
 
     /**

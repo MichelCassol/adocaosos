@@ -1,7 +1,7 @@
     @extends('layout.app')
 
     @section('conteudo')
-    </li> 
+    </li>
     </ul>
     </div><!-- Sidebar -->
     <div class="clearfix"></div>
@@ -33,7 +33,7 @@
                             <label for="inputEmail4" class="col-form-label">Nome</label>
                             <input type="nome" class="form-control" id="inputNome" name="inputNome" placeholder="Nome do Animal">
                         </div>
-                    
+
                         <div class="form-group col-md-6">
                             <label for="comboEspecie" class="col-form-label" name="comboEspecie">Espécie</label>
                             <select id="inputEspecie" class="form-control">
@@ -47,7 +47,7 @@
                                 <option>Porco</option>
                                 <option>Porquinho da India</option>
                             </select></div>
-                    
+
 
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Sexo:</label>
@@ -65,12 +65,12 @@
                             <label for="inputIdade" class="col-form-label">Idade</label>
                             <input type="number" class="form-control" id="inputIdade" name="inputIdade" placeholder="Idade do Animal">
                         </div>
-                    
+
                         <div class="form-group col-md-6">
                             <label for="inputRaca" class="col-form-label">Raça</label>´
                             <input type="text" class="form-control" id="inputRaca" name="inputRaca" placeholder="Raça do Animal">
                         </div>
-                  
+
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Porte:</label>
                             <div class="custom-control custom-radio">
@@ -80,13 +80,13 @@
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="radioPorte2" name="radioPorte" class="custom-control-input">
                                 <label class="custom-control-label" for="radioPorte2">Médio</label>
-                            </div>                    
+                            </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="radioPorte3" name="radioPorte" class="custom-control-input">
                                 <label class="custom-control-label" for="radioPorte3">Grande</label>
                             </div>
                         </div>
-                        
+
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Castrado:</label>
                             <div class="custom-control custom-radio">
@@ -120,16 +120,19 @@
 
                     </div>
                         <div class="form-row">
-                            <div class="form-group col-md-12"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
-                                <select id="inputState" class="form-control">
+                            <div class="form-group col-md-6"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
+
+                                <input class="form-control" type="text" id="dono" name="dono" value="{{ $users->name }}" disabled="disabled">
+
+                                {{-- <select id="inputState" class="form-control">
                                     <option disabled="disabled" value="" selected>Selecione um Dono</option>
-                                   
-                                    
-                                        
-                                </select>
+                                    @foreach ($users as $user)
+                                        <option value="{{ $cargo->id }}" @isset($user) @if selected>Selecione um Dono</option>
+                                    @endforeach
+                                </select> --}}
                              </div>
                         </div>
-                    
+
                     <div class="form-row">
                         <button type="submit" class="btn btn-primary" id="salvarAnimal" name="salvarAnimal">Salvar</button>
                     </div>

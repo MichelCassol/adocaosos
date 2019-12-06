@@ -19,11 +19,11 @@
                         </div>
                     @endif
 
-                    {{ __('Antes de prosseguir, por favor verifique o seu e-mail por um link de verificação.') }}
+                    {{ __('Antes de prosseguir, por favor verifique o seu e-mail por um link de verificação') }}
                     {{ __('Se você não recebeu um email') }},
                     <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                         @csrf
-                        <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('clique aqui para enviar novamente') }}</button>.
+                        <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __(' clique aqui para enviar novamente') }}</button>.
                     </form>
                 </div>
             </div>

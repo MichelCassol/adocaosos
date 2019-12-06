@@ -30,7 +30,7 @@
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4" class="col-form-label">Nome</label>
+                            <label for="inputNome" class="col-form-label">Nome</label>
                             <input type="nome" class="form-control" id="inputNome" name="inputNome" placeholder="Nome do Animal">
                         </div>
 
@@ -74,15 +74,15 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Porte:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioPorte1" name="radioPorte" class="custom-control-input">
+                                <input type="radio" id="radioPorte1" name="radioPorte" class="custom-control-input" value="Pequeno">
                                 <label class="custom-control-label" for="radioPorte1">Pequeno</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioPorte2" name="radioPorte" class="custom-control-input">
+                                <input type="radio" id="radioPorte2" name="radioPorte" class="custom-control-input" value="Médio">
                                 <label class="custom-control-label" for="radioPorte2">Médio</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioPorte3" name="radioPorte" class="custom-control-input">
+                                <input type="radio" id="radioPorte3" name="radioPorte" class="custom-control-input" value="Grande">
                                 <label class="custom-control-label" for="radioPorte3">Grande</label>
                             </div>
                         </div>
@@ -112,15 +112,16 @@
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label class="col-form-label" name="inputDesc">Descrição</label>
+                            <label for="inputDesc" class="col-form-label">Descrição</label>
                             <div>
-                                <textarea class="form-control"  rows="3"></textarea>
+                                <textarea id= "inputDesc" name="inputDesc" class="form-control" rows="3"></textarea>
                             </div>
                         </div>
 
                     </div>
                         <div class="form-row">
-                            <div class="form-group col-md-12"><label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
+                            <div class="form-group col-md-12">
+                                <label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
                                 <input class="form-control" type="text" id="dono" name="dono" value="{{ $users->name }}" disabled="disabled">
                              </div>
                         </div>

@@ -28,7 +28,8 @@
         <div class="col-md-12">
             <div class="card-box">
                 <h4 class="m-t-0 header-title">Cadastro</h4>
-                <form>
+                <form method="POST" action="/animal">
+                    @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6"><label for="inputEmail4"
                                 class="col-form-label">Nome</label> <input type="nome"
@@ -52,10 +53,10 @@
                         <div class="form-group col-md-2"><label
                             class="col-form-label">Sexo:</label>
                             <div class="custom-control custom-radio"><input type="radio"
-                                    id="radioSexo1" name="radioSexo" class="custom-control-input">
+                                    id="radioSexo1" name="radioSexo" class="custom-control-input" value="F">
                                 <label class="custom-control-label" for="radioSexo1">Fêmea</label></div>
                             <div class="custom-control custom-radio"><input type="radio"
-                                    id="radioSexo2" name="radioSexo" class="custom-control-input">
+                                    id="radioSexo2" name="radioSexo" class="custom-control-input" value="M">
                                 <label class="custom-control-label" for="radioSexo2">Macho</label></div>
                     </div>
                     <div class="form-group col-md-4"><label for="inputCity"
@@ -83,20 +84,20 @@
                             <div class="form-group col-md-2"><label
                                 class="col-form-label">Castrado:</label>
                                 <div class="custom-control custom-radio"><input type="radio"
-                                        id="radioCastro1" name="radioCastro" class="custom-control-input">
+                                        id="radioCastro1" name="radioCastro" class="custom-control-input" value="S">
                                     <label class="custom-control-label" for="radioCastro1">Sim</label></div>
                                 <div class="custom-control custom-radio"><input type="radio"
-                                        id="radioCastro2" name="radioCastro" class="custom-control-input">
+                                        id="radioCastro2" name="radioCastro" class="custom-control-input"value="N">
                                     <label class="custom-control-label" for="radioCastro2">Não</label></div>
                             </div>
                             <div class="form-group col-md-2"><label
                                 class="col-form-label">Vacinado:</label>
                                 <div class="custom-control custom-radio"><input type="radio"
-                                        id="radicoVac1" name="radicoVac" class="custom-control-input">
+                                        id="radicoVac1" name="radicoVac" class="custom-control-input" value="S">
                                     <label class="custom-control-label" for="radicoVac1">Sim</label></div>
                                 <div class="custom-control custom-radio"><input type="radio"
-                                        id="radicoVac2" name="radicoVac" class="custom-control-input">
-                                    <label class="custom-control-label" for="radicoVac2">Não</label></div>
+                                        id="radicoVac2" name="radicoVac" class="custom-control-input" value="N">
+                                    <label class="custom-control-label" for="radicoVac2" >Não</label></div>
                             </div>
 
                             <div class="form-group col-md-6"><label class="col-md col-form-label" name="inputDesc">Descrição</label>

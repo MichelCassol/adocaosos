@@ -21,7 +21,7 @@ class AnimalController extends Controller
 
        //$animais = Animal::orderBy('nome', 'ASC')->get();
        //return view('listagemAnimais', ['animais' => $animais]);
-       return view('cadastroAnimal');
+       return view('listagemAnimais');
 
     }
 

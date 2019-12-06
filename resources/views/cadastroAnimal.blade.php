@@ -93,11 +93,11 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Castrado:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioCastro1" name="radioCastro" class="custom-control-input" value="S">
+                                <input type="radio" id="radioCastro1" name="radioCastro" class="custom-control-input" value="1">
                                 <label class="custom-control-label" for="radioCastro1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioCastro2" name="radioCastro" class="custom-control-input"value="N">
+                                <input type="radio" id="radioCastro2" name="radioCastro" class="custom-control-input"value="0">
                                 <label class="custom-control-label" for="radioCastro2">Não</label>
                             </div>
                         </div>
@@ -105,11 +105,11 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Vacinado:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radicoVac1" name="radicoVac" class="custom-control-input" value="S">
+                                <input type="radio" id="radicoVac1" name="radicoVac" class="custom-control-input" value="1">
                                 <label class="custom-control-label" for="radicoVac1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radicoVac2" name="radicoVac" class="custom-control-input" value="N">
+                                <input type="radio" id="radicoVac2" name="radicoVac" class="custom-control-input" value="0">
                                 <label class="custom-control-label" for="radicoVac2" >Não</label>
                             </div>
                         </div>
@@ -129,9 +129,6 @@
 
                                 {{-- <select id="inputState" class="form-control">
                                     <option disabled="disabled" value="" selected>Selecione um Dono</option>
-                                    @foreach ($users as $user)
-                                        <option value="{{ $cargo->id }}" @isset($user) @if selected>Selecione um Dono</option>
-                                    @endforeach
                                 </select> --}}
                              </div>
                         </div>

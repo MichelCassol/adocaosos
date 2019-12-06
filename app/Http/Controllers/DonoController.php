@@ -13,7 +13,7 @@ class DonoController extends Controller
      */
     public function index()
     {
-        //
+        return view('cadastroDono');
     }
 
     /**

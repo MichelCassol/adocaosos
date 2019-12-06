@@ -32,18 +32,18 @@
                 <div class="form-row">
                     <div class="form-group col-md-6"><label for="inputNome"
                             class="col-form-label">Nome</label> <input type="text"
-                            class="form-control" id="inputNome" placeholder="Nome do Animal"></div>
+                            class="form-control" name="inputNome" id="inputNome" placeholder="Nome do Animal"></div>
 
                             <div class="form-group col-md-6"><label for="cpf"
                                 class="col-form-label">Cpf</label> <input type="number"
-                                class="form-control" id="inputCPF" ></div>
+                                class="form-control" name="inputCPF" id="inputCPF" ></div>
                                 <div class="form-group col-md-2"><label
                                     class="col-form-label">Sexo</label>
                                     <div class="custom-control custom-radio"><input type="radio"
-                                            id="radioSexo1" name="radioSexo" class="custom-control-input">
+                                            id="radioSexo1" name="radioSexo" class="custom-control-input" value="F">
                                         <label class="custom-control-label" for="radioSexo1">Feminino</label></div>
                                     <div class="custom-control custom-radio"><input type="radio"
-                                            id="radioSexo2" name="radioSexo" class="custom-control-input">
+                                            id="radioSexo2" name="radioSexo" class="custom-control-input" value="M">
                                         <label class="custom-control-label" for="radioSexo2">Masculino</label></div>
 
 
@@ -51,11 +51,11 @@
 
                             <div class="form-group col-md-4"><label for="cpf"
                                 class="col-form-label">Data de Nascimento</label> <input type="date"
-                                class="form-control" id="inputNascimento" ></div>
+                                class="form-control" name="inputNascimento" id="inputNascimento" ></div>
 
 
-                            <div class="form-group col-md-6"><label for="inputState"
-                                class="col-form-label">Espécie</label> <select id="inputState"
+                            <div class="form-group col-md-6"><label name="comboEstado" for="comboEstado"
+                                class="col-form-label">Estado</label> <select id="comboEstado"
                                 class="form-control">
                                 <option>Selecione um estado</option>
                                 <option>Acre</option>
@@ -86,52 +86,25 @@
                                 <option>Sergipe</option>
                                 <option>Tocantins</option>
                 </select></div>
-                </div>
+                <div class="form-group col-md-6"><label for="inputCidade"
+                    class="col-form-label">Cidade</label> <input type="text"
+                    class="form-control" name="inputCidade" id="inputCidade" placeholder="Cidade"></div>
+                <div class="form-group col-md-6"><label for="inputLogradouro"
+                    class="col-form-label">Logradouro</label> <input type="text"
+                    class="form-control" name="inputLogradouro" id="inputLogradouro" placeholder="Logradouro"></div>
+                    <div class="form-group col-md-6"><label for="inputLogradouro"
+                        class="col-form-label">Bairro</label> <input type="text"
+                        class="form-control" name="inputBairro" id="inputBairro" placeholder="Bairro"></div>
+                        <div class="form-group col-md-6"><label for="inputLogradouro"
+                            class="col-form-label">Numero</label> <input type="number"
+                            class="form-control" name="inputNumero" id="inputNumero" placeholder="Numero"></div>
+                            <div class="form-group col-md-6"><label for="inputNumero"
+                                class="col-form-label">Email</label> <input type="email"
+                                class="form-control" name="inputEmail" id="inputEmail" placeholder="email@email.com"></div>
+                                <div class="form-group col-md-6"><label for="inputLogradouro"
+                                    class="col-form-label">Telefone</label> <input type="text"
+                                    class="form-control" name="inputTelefone" id="inputFone" placeholder="(xx)x-xxxx-xxxx)"></div>
 
-                <div class="form-row">
-                    <div class="form-group col-md-2"><label
-                        class="col-form-label">Sexo</label>
-                        <div class="custom-control custom-radio"><input type="radio"
-                                id="radioSexo1" name="radioSexo" class="custom-control-input">
-                            <label class="custom-control-label" for="radioSexo1">Fêmea</label></div>
-                        <div class="custom-control custom-radio"><input type="radio"
-                                id="radioSexo2" name="radioSexo" class="custom-control-input">
-                            <label class="custom-control-label" for="radioSexo2">Macho</label></div>
-                </div>
-                <div class="form-group col-md-4"><label for="inputCity"
-                    class="col-form-label">Idade</label> <input type="number"
-                    class="form-control" id="inputIdade" placeholder="Idade do Animal"></div>
-                    <div class="form-group col-md-6"><label for="inputCity"
-                            class="col-form-label">Raça</label> <input type="text"
-                            class="form-control" id="inputRaca" placeholder="Raça do Animal"></div>
-                            <div class="form-group col-md-2">
-
-
-
-                    <label class="col-form-label">Sexo</label>
-                         <div class="custom-control custom-radio"><input type="radio"
-                        id="radioPorte1" name="radioPorte" class="custom-control-input">
-                        <label class="custom-control-label" for="radioPorte1">Pequeno</label></div>
-                        <div class="custom-control custom-radio"><input type="radio"
-                        id="radioPorte2" name="radioPorte" class="custom-control-input">
-                        <label class="custom-control-label" for="radioPorte2">Médio</label></div>
-                        <div class="custom-control custom-radio"><input type="radio"
-                        id="radioPorte3" name="radioPorte" class="custom-control-input">
-                        <label class="custom-control-label" for="radioPorte3">Grande</label></div>
-                        </div>
-
-                        <div class="form-group col-md-2"><label
-                            class="col-form-label">Castrado:</label>
-                            <div class="custom-control custom-radio"><input type="radio"
-                                    id="radioCastro1" name="radioCastro" class="custom-control-input">
-                                <label class="custom-control-label" for="radioCastro1">Sim</label></div>
-                            <div class="custom-control custom-radio"><input type="radio"
-                                    id="radioCastro2" name="radioCastro" class="custom-control-input">
-                                <label class="custom-control-label" for="radioCastro2">Não</label></div>
-                        </div>
-                        <div class="form-group col-md-8"><label class="col-md col-form-label">Descrição</label>
-                            <div class="col-md"><textarea class="form-control"  rows="3"></textarea></div>
-                    </div>
 
                 </div>
 

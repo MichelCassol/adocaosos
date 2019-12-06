@@ -48,6 +48,9 @@
                                 <option>Porquinho da India</option>
                             </select></div>
 
+                            </select>
+                        </div>
+
 
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Sexo:</label>

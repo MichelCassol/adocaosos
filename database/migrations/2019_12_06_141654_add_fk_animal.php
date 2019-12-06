@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddFkDono extends Migration
+class AddFkAnimal extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddFkDono extends Migration
      */
     public function up()
     {
-        Schema::table('tb_dono', function (Blueprint $table) {
+        Schema::table('tb_animal', function (Blueprint $table) {
             $table->unsignedBigInteger('id_dono');
             $table->foreign('id_dono')->references('id')->on('tb_dono');
         });
@@ -26,7 +26,7 @@ class AddFkDono extends Migration
      */
     public function down()
     {
-        Schema::table('tb_dono', function (Blueprint $table) {
+        Schema::table('tb_animal', function (Blueprint $table) {
             //
         });
     }

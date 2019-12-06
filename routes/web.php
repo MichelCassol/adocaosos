@@ -13,6 +13,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 
 Route::resource('/animal', 'AnimalController');
 Route::resource('/dono', 'DonoController');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Animal;
 use Illuminate\Http\Request;
 
 class AnimalController extends Controller
@@ -23,7 +24,7 @@ class AnimalController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -34,7 +35,18 @@ class AnimalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $animal = new Animal();
+
+        $animal->nome = $request->input('inputNome');
+        $animal->sexo = $request->input('');
+        $animal->especie = $request->input();
+        $animal->raca = $request->input();
+        $animal->idade = $request->input();
+        $animal->porte = $request->input();
+        $animal->descricao = $request->input();
+        $animal->vacinacao = $request->input();
+        $animal->castrado = $request->input();
+        $animal->id_dono = $request->input();
     }
 
     /**

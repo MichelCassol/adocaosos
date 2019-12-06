@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Animal;
+use App\Dono;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -15,7 +16,11 @@ class AnimalController extends Controller
      */
     public function index()
     {
-        return view('listagemAnimais');
+
+       //$animais = Animal::orderBy('nome', 'ASC')->get();
+       //return view('listagemAnimais', ['animais' => $animais]);
+       return view('cadastroAnimal');
+
     }
 
     /**
@@ -25,7 +30,8 @@ class AnimalController extends Controller
      */
     public function create()
     {
-        return view('cadastroAnimal');
+        $donos = Dono::orderBy('nome', 'ASC')->get();
+        return view('cadastroAnimal', ['donos' => $donos]);
     }
 
     /**
@@ -34,6 +40,7 @@ class AnimalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
         $animal = new Animal();
@@ -77,7 +84,9 @@ class AnimalController extends Controller
      */
     public function edit($id)
     {
-        //
+        $animal = Animal::find($id);
+        $donos = Dono::orderBy('nome','ASC')->get();
+        return view ('cadastroAnimal', ['animal'=>$animal, 'donos'=> $donos]);
     }
 
     /**
@@ -89,7 +98,17 @@ class AnimalController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $animal = Animal::find($id);
+        $animal->nome = $request->input('inputNome');
+        $animal->sexo = $request->input('radioSexo');
+        $animal->especie = $request->input('comboEspecie');
+        $animal->raca = $request->input('inputRaca');
+        $animal->idade = $request->input('inputIdade');
+        $animal->porte = $request->input('radioPorte');
+        $animal->descricao = $request->input('inputDesc');
+        $animal->vacinacao = $request->input('radicoVac');
+        $animal->castrado = $request->input('radioCastro');
+        $animal->id_dono = 1; //$request->input();
     }
 
     /**
@@ -100,6 +119,8 @@ class AnimalController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Animal::destroy($id);
+        $animais = Animal::orderBy('nome','ASC')->get();
+        return view('listagemAnimais',['animais'=>$animais]);
     }
 }

@@ -120,10 +120,17 @@
 
                     </div>
                         <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <label for="comboDono" class="col-form-label" name="comboDono">Dono</label>
-                                <input class="form-control" type="text" id="dono" name="dono" value="{{ $users->name }}" disabled="disabled">
-                             </div>
+                            <div class="form-group col-md-6">
+                                <label for="comboDono" class="col-form-label">Dono</label>
+                                <select id="inputDono" name="comboDono" class="form-control">
+                                    <option disabled="disabled" value="" selected>Selecione um Dono</option>
+                                   
+                                   @foreach ($donos as $dono)
+                                        <option value="{{ $dono->id }}" @isset($animal) @if($animal->dono_id == $dono->id) selected @endif @endisset>{{ $dono->nome }}</option>    
+                                    @endforeach
+                                    
+                                </select>
+                            </div>
                         </div>
 
                     <div class="form-row">

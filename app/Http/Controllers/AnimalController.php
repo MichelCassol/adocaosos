@@ -21,9 +21,9 @@ class AnimalController extends Controller
     public function index()
     {
 
-       //$animais = Animal::orderBy('nome', 'ASC')->get();
-       //return view('listagemAnimais', ['animais' => $animais]);
-       return view('listagemAnimais');
+       $animais = Animal::orderBy('nome', 'ASC')->get();
+       return view('listagemAnimais', ['animais' => $animais]);
+       //return view('listagemAnimais');
 
     }
 
@@ -34,8 +34,10 @@ class AnimalController extends Controller
      */
     public function create()
     {
-        $user = Auth::user();
-        return view('cadastroAnimal',['users' => $user]);
+        //$user = Auth::user();
+        //return view('cadastroAnimal',['users' => $user]);
+        $donos = Dono::orderBy('nome', 'ASC')->get();
+        return view('cadastroAnimal', ['donos'=>$donos]);
     }
 
     /**
@@ -58,7 +60,7 @@ class AnimalController extends Controller
         $animal->descricao = $request->input('inputDesc');
         $animal->vacinacao = $request->input('radioVac');
         $animal->castrado = $request->input('radioCastro');
-        $animal->id_dono = $request->input('dono');
+        $animal->id_dono = $request->input('comboDono');
         //$animal->id_dono = 1;
 
         if(isset($animal)){
@@ -116,6 +118,13 @@ class AnimalController extends Controller
         $animal->id_dono = $request->input('dono');
         //$animal->id_dono = 1;
 
+        if(isset($animal)){
+            $animal->save();
+            Alert::success('Registro salvo','O registro foi salvo com sucesso');
+            return redirect('/animal');
+        }else{
+            Alert::error('Erro','Ocorreu um erro ao salvar');
+        }
     }
 
     /**

@@ -9,8 +9,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
-
-
 class AnimalController extends Controller
 {
     /**
@@ -21,9 +19,9 @@ class AnimalController extends Controller
     public function index()
     {
 
-       $animais = Animal::orderBy('nome', 'ASC')->get();
-       return view('listagemAnimais', ['animais' => $animais]);
-       //return view('listagemAnimais');
+       //$animais = Animal::orderBy('nome', 'ASC')->get();
+       //return view('listagemAnimais', ['animais' => $animais]);
+       return view('listagemAnimais');
 
     }
 
@@ -34,10 +32,8 @@ class AnimalController extends Controller
      */
     public function create()
     {
-        //$user = Auth::user();
-        //return view('cadastroAnimal',['users' => $user]);
-        $donos = Dono::orderBy('nome', 'ASC')->get();
-        return view('cadastroAnimal', ['donos'=>$donos]);
+        $user = Auth::user();
+        return view('cadastroAnimal',['users' => $user]);
     }
 
     /**
@@ -61,7 +57,6 @@ class AnimalController extends Controller
         $animal->vacinacao = $request->input('radioVac');
         $animal->castrado = $request->input('radioCastro');
         $animal->id_dono = $request->input('dono');
-        //$animal->id_dono = 1;
 
         if(isset($animal)){
             $animal->save();
@@ -115,8 +110,9 @@ class AnimalController extends Controller
         $animal->descricao = $request->input('inputDesc');
         $animal->vacinacao = $request->input('radioVac');
         $animal->castrado = $request->input('radioCastro');
-        $animal->id_dono = $request->input('dono');
-        //$animal->id_dono = 1;
+        //$animal->id_dono = $request->input('comboDono');
+        $animal->id_dono = 1;
+
     }
 
     /**

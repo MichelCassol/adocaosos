@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Dono;
-use RealRashid\SweetAlert\Facades\Alert;
 
 class DonoController extends Controller
 {
@@ -15,8 +13,7 @@ class DonoController extends Controller
      */
     public function index()
     {
-        $donos = Dono::orderBy('nome', 'ASC')->get();
-        return view('listagemDono', ['donos' => $donos]);
+        return view('listagemDono');
     }
 
     /**
@@ -25,9 +22,8 @@ class DonoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   
-        $donos = Dono::orderBy('nome', 'ASC')->get();
-        return view('cadastroDono', ['donos'=>$donos]);
+    {
+        return view('cadastroDono');
     }
 
     /**
@@ -38,27 +34,7 @@ class DonoController extends Controller
      */
     public function store(Request $request)
     {
-        $dono = new Dono();
-
-        $dono->nome = $request->input('inputNome');
-        $dono->cpf = $request->input('inputCPF');
-        $dono->sexo = $request->input('radioSexo');
-        $dono->dataNascimento = $request->input('inputNascimento');
-        $dono->rua = $request->input('inputLogradouro');
-        $dono->numero = $request->input('inputNumero');
-        $dono->bairro = $request->input('inputBairro');
-        $dono->estado = $request->input('comboEstado');
-        $dono->cidade = $request->input('inputCidade');
-        $dono->email  = $request->input('inputEmail');
-        $dono->telefone = $request->input('inputTelefone');
-
-        if(isset($dono)){
-            $dono->save();
-            Alert::success('Registro salvo','O registro foi salvo com sucesso');
-            return redirect('/dono');
-        }else{
-            Alert::error('Erro','Ocorreu um erro ao salvar');
-        }
+        //
     }
 
     /**
@@ -80,8 +56,7 @@ class DonoController extends Controller
      */
     public function edit($id)
     {
-        $dono = Dono::find($id);
-        return view ('cadastroDono', ['dono'=>$dono]);
+        //
     }
 
     /**
@@ -93,26 +68,7 @@ class DonoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $dono = Dono::find($id);
-        $dono->nome = $request->input('inputNome');
-        $dono->cpf = $request->input('inputCPF');
-        $dono->sexo = $request->input('radioSexo');
-        $dono->dataNascimento = $request->input('inputNascimento');
-        $dono->rua = $request->input('inputLogradouro');
-        $dono->numero = $request->input('inputNumero');
-        $dono->bairro = $request->input('inputBairro');
-        $dono->estado = $request->input('comboEstado');
-        $dono->cidade = $request->input('inputCidade');
-        $dono->email  = $request->input('inputEmail');
-        $dono->telefone = $request->input('inputTelefone');
-
-        if(isset($dono)){
-            $dono->save();
-            Alert::success('Registro salvo','O registro foi salvo com sucesso');
-            return redirect('/dono');
-        }else{
-            Alert::error('Erro','Ocorreu um erro ao salvar');
-        }
+        //
     }
 
     /**
@@ -123,8 +79,6 @@ class DonoController extends Controller
      */
     public function destroy($id)
     {
-        Dono::destroy($id);
-        $donos = Dono::orderBy('nome', 'ASC')->get();
-        return view('listagemDonos',['donos'=>$donos]);
+        //
     }
 }

@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
-Route::get('/', function () {
-    return view('listagemAnimais');
-});
-Route::get('/animal', function () {
-    return view('cadastroAnimal');
-});
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::resource('/animal', 'AnimalController');
+Route::resource('/dono', 'donoController');
+

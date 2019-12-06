@@ -11354,5 +11354,11 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+
+  .imagem-login{
+    text-align: center;
+    margin-left: 20%;
+
+  }
 }
 

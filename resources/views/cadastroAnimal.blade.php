@@ -90,11 +90,11 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Castrado:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioCastro1" name="radioCastro" class="custom-control-input" value=true>
+                                <input type="radio" id="radioCastro1" name="radioCastro" class="custom-control-input" value=1>
                                 <label class="custom-control-label" for="radioCastro1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioCastro2" name="radioCastro" class="custom-control-input" value=false>
+                                <input type="radio" id="radioCastro2" name="radioCastro" class="custom-control-input" value=0>
                                 <label class="custom-control-label" for="radioCastro2">Não</label>
                             </div>
                         </div>
@@ -102,12 +102,12 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Vacinado:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioVac1" name="radicoVac" class="custom-control-input" value=true>
-                                <label class="custom-control-label" for="radicoVac1">Sim</label>
+                                <input type="radio" id="radioVac1" name="radioVac" class="custom-control-input" value=1>
+                                <label class="custom-control-label" for="radioVac1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioVac2" name="radicoVac" class="custom-control-input" value=false>
-                                <label class="custom-control-label" for="radicoVac2" >Não</label>
+                                <input type="radio" id="radioVac2" name="radioVac" class="custom-control-input" value=0>
+                                <label class="custom-control-label" for="radioVac2" >Não</label>
                             </div>
                         </div>
 

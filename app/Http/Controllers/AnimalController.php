@@ -56,8 +56,7 @@ class AnimalController extends Controller
         $animal->descricao = $request->input('inputDesc');
         $animal->vacinacao = $request->input('radioVac');
         $animal->castrado = $request->input('radioCastro');
-        //$animal->id_dono = $request->input('comboDono');
-        $animal->id_dono = 1;
+        $animal->id_dono = $request->input('dono');
 
         if(isset($animal)){
             $animal->save();

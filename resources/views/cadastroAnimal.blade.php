@@ -32,9 +32,9 @@
                     <div class="form-row">
                         <div class="form-group col-md-6"><label for="inputEmail4"
                                 class="col-form-label">Nome</label> <input type="nome"
-                                class="form-control" id="inputNome" placeholder="Nome do Animal"></div>
-                                <div class="form-group col-md-6"><label for="inputState"
-                                    class="col-form-label">Espécie</label> <select id="inputState"
+                                class="form-control" id="inputNome" name="inputNome" placeholder="Nome do Animal"></div>
+                                <div class="form-group col-md-6"><label for="comboEspecie"
+                                    class="col-form-label" name="comboEspecie">Espécie</label> <select id="inputState"
                                     class="form-control">
                                     <option>Escolha a Espécie</option>
                                     <option>Ave</option>
@@ -60,10 +60,10 @@
                     </div>
                     <div class="form-group col-md-4"><label for="inputCity"
                         class="col-form-label">Idade</label> <input type="number"
-                        class="form-control" id="inputIdade" placeholder="Idade do Animal"></div>
+                        class="form-control" id="inputIdade" name="inputIdade" placeholder="Idade do Animal"></div>
                         <div class="form-group col-md-6"><label for="inputCity"
                                 class="col-form-label">Raça</label> <input type="text"
-                                class="form-control" id="inputRaca" placeholder="Raça do Animal"></div>
+                                class="form-control" id="inputRaca" name="inputRaca"  placeholder="Raça do Animal"></div>
                                 <div class="form-group col-md-2">
 
 
@@ -89,7 +89,7 @@
                                         id="radioCastro2" name="radioCastro" class="custom-control-input">
                                     <label class="custom-control-label" for="radioCastro2">Não</label></div>
                             </div>
-                            <div class="form-group col-md-8"><label class="col-md col-form-label">Descrição</label>
+                            <div class="form-group col-md-8"><label class="col-md col-form-label" name="inputDesc">Descrição</label>
                                 <div class="col-md"><textarea class="form-control"  rows="3"></textarea></div>
                         </div>
 

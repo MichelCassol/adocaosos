@@ -102,12 +102,12 @@
                         <div class="form-group col-md-2">
                             <label class="col-form-label">Vacinado:</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioVac1" name="radicoVac" class="custom-control-input" value=true>
-                                <label class="custom-control-label" for="radicoVac1">Sim</label>
+                                <input type="radio" id="radioVac1" name="radioVac" class="custom-control-input" value=true>
+                                <label class="custom-control-label" for="radioVac1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="radioVac2" name="radicoVac" class="custom-control-input" value=false>
-                                <label class="custom-control-label" for="radicoVac2" >Não</label>
+                                <input type="radio" id="radioVac2" name="radioVac" class="custom-control-input" value=false>
+                                <label class="custom-control-label" for="radioVac2" >Não</label>
                             </div>
                         </div>
 
